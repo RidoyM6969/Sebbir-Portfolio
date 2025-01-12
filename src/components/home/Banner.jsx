@@ -1,9 +1,11 @@
 import React from 'react'
+import { TypeAnimation } from 'react-type-animation';
 import Container from '../Extra/Container'
 import sebbir from "../../assets/sebbir.png"
 import { FiFacebook } from "react-icons/fi";
 import { LuLinkedin } from "react-icons/lu";
 import { LuTwitter } from "react-icons/lu";
+
 
 
 
@@ -18,7 +20,23 @@ const Banner = () => {
             <div className="">
             <h6 className='text-[#c4cfde] text-[14px] font-semibold uppercase mb-[20px] tracking-widest '>welcome to my world</h6>
             <h1 className=' text-[30px] lg:text-[50px] xl:text-[60px] font-bold capitalize mb-[22px] tracking-[1px] font-roboto '>hi, i'm <span className='text-[#ff014f]'>sibbir hossin</span> <br />
-              <span className=' lowercase '> <span className='text-[20px] lg:text-[50px] '>a</span> <span className='text-[20px] lg:text-[35px] xl:text-[50px] capitalize'>lead genaration expert  </span> </span>
+                <span className=' lowercase '> <span className='text-[20px] lg:text-[50px] '>a</span> <span className='text-[10px] md:text-[12px] lg:text-[35px] xl:text-[20px] capitalize'>
+                <TypeAnimation 
+                sequence={[
+                  'lead genaration expert',
+                  1000,
+                  'food for Hamsters',
+                  1000,
+                  'We produce Pigs',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={0}
+                style={{  fontSize: '2em', display: 'inline-block ' }}
+                repeat={Infinity}
+              />
+                </span>
+                </span>
             </h1>
             <p className='text-[#c4cfde] xl:w-[680px]'>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
             </div>
